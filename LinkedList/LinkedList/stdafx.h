@@ -3,11 +3,11 @@
 
 using namespace std;
 
-template <typename T>
 struct Node
 {
-	T value;
-	struct Node<T> *next = nullptr;
+public:
+	int value;
+	struct Node *next = nullptr;
 };
 
 #include "LinkedList.h"

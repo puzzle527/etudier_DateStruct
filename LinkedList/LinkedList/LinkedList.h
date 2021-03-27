@@ -1,15 +1,19 @@
 #pragma once
-template <typename T>
 
 class LinkedList
 {
 private:
-	Node<T>	*head;	  //赣府
-	Node<T>	*tail;	  //部府
+	Node	*head;	  //赣府
+	Node	*tail;	  //部府
 	int		size = 0; //傅农狼 辨捞
 public:
 	LinkedList();
 	~LinkedList();
 
-	void AddNode(T _value);
+	void AddNode(int value);
+	void DeleteNode(int value);
+	void Deletetail();
+	void Deletehead();
+	void PrintListValue();
+	void DeleteList();
 };
