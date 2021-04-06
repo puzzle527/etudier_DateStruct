@@ -11,6 +11,8 @@ public:
 	~LinkedList();
 
 	void AddNode(int value);
+	void AddNode(int value, int index);
+	void Addhead(int value);
 	void DeleteNode(int value);
 	void Deletetail();
 	void Deletehead();

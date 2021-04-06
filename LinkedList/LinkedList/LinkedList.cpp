@@ -33,6 +33,41 @@ void LinkedList::AddNode(int value)
 	}
 }
 
+void LinkedList::AddNode(int value, int index)
+{
+	if (index > size || index < 0)
+	{
+		cout << "해당하는 인덱스 값은 없습니다." << endl;
+		return;
+	}
+
+	Node *ptr = head;
+	Node *tmp = ptr;
+	Node *node = new Node; //새로추가 되는 노드
+
+	node->value = value;
+	node->next = nullptr;
+
+	for (int i = 0; i < index - 1; i++)
+	{
+		tmp = ptr; //들어갈 노드의 전 위치
+		ptr = ptr->next; //들어갈 노드의 위치
+	}
+	tmp->next = node;
+	node->next = ptr; //새 노드는 기존에 있는 노드위치를 기리킨다.
+	size++;
+}
+
+void LinkedList::Addhead(int value)
+{
+	Node *ptr = new Node();
+
+	size++;
+	ptr->next = head;
+	ptr->value = value;
+	head = ptr;
+}
+
 void LinkedList::DeleteNode(int value)
 {
 	Node *ptr = head;
