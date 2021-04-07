@@ -23,11 +23,11 @@ public:
 		next->prev = prev->next = this;
 		//this는 멤버 함수가 호출된 객체의 주소를 가리키는 숨겨진 포인터
 	}
-	void DeleteNode()
+	void DeleteNode() //노드 자기자신을 삭제하는 함수.
 	{
-		prev->next = next;
-		next->prev = prev;
-		delete this;
+		prev->next = next; //이전 노드의 다음을 가르키는 포인터에 자신 노드의 다음을 가리키는 포인터 대입
+		next->prev = prev; //다음 노드의 이전을 가리키는 포인터에 자신 노드의 이전을 가리키는 포인터 대입 -> 자기 자신의 앞과 뒤 노드 연결
+		delete this; //자기자신 삭제
 	}
 };
 
