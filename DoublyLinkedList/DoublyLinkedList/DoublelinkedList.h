@@ -23,7 +23,7 @@ public:
 		next->prev = prev->next = this;
 		//this는 멤버 함수가 호출된 객체의 주소를 가리키는 숨겨진 포인터
 	}
-	void DeleteNode() //노드 자기자신을 삭제하는 함수.
+	void DeleteNode() //노드 자기자신을 삭제하는 함수
 	{
 		prev->next = next; //이전 노드의 다음을 가르키는 포인터에 자신 노드의 다음을 가리키는 포인터 대입
 		next->prev = prev; //다음 노드의 이전을 가리키는 포인터에 자신 노드의 이전을 가리키는 포인터 대입 -> 자기 자신의 앞과 뒤 노드 연결
@@ -38,6 +38,23 @@ private:
 	Node	*tail = nullptr;
 	int		 size = 0;
 public:
+	DoubleLinkedList()
+	{
+		head = new Node; //비어있는 머리
+		tail = new Node; //비어있는 꼬리 미리 생성
+
+		head->next = tail;
+		tail->prev = head; //서로 연결
+	}
+	~DoubleLinkedList()
+	{
+		while (head->next != tail)
+		{
+			head->next->DeleteNode();
+		}
+		delete head;
+		delete tail;
+	}
 	void PrintList()
 	{
 		Node* cur = head; 
