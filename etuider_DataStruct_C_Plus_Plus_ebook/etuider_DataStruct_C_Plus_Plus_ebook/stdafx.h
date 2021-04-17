@@ -8,14 +8,20 @@
 #include <string>
 #include <algorithm>
 #include <sstream>
+#include <random>
+#include <chrono>
 
 #include <type_traits>
-#include <algorithm>
+
+#include <time.h>
 
 using namespace std;
 
 #include "array.h"
 #include "singly_ll.h"
+#include "cir_list.h"
+
+#include "CardGame.h"
 
 struct student
 {

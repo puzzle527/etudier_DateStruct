@@ -2,6 +2,7 @@
 
 int main(void)
 {
+	srand(time(NULL));
 	//dynamic_array main
 	/*{
 		int nStudents;
@@ -125,6 +126,55 @@ int main(void)
 		//forward_list는 순방향 이동만 가능
 		//에러 코드 -> advance(it1, -2);
 	}*/
+
+	//원형연결리스트로 만든 플레이리스트;
+	/*playlist pl;
+
+	pl.insert(1);
+	pl.insert(2);
+	cout << "재생 목록 : ";
+	pl.loopOnce();
+
+	playlist pl2 = pl;
+	pl2.erase(2);
+	pl2.insert(3);
+	cout << "두번째 재생 목록 : ";
+	pl2.loopOnce();*/
+	
+	//STL 양방향 연결리스트 이용
+	/*list<int> list1 = { 1,2,3,4,5 };
+	list1.push_back(6); //1,2,3,4,5,6 //맨뒤에 추가
+	list1.insert(next(list1.begin()), 0); //1,0,2,3,4,5,6 //첫번째 다음에 0추가
+	list1.insert(list1.end(), 7); //1,0,2,3,4,5,6,7 //마지막에 7추가
+	list1.pop_back(); //1,0,2,3,4,5,6 //마지막빼기
+
+	cout << "삽입 & 삭제 후 리스트: ";
+	for (auto i : list1)
+		cout << i << " ";
+	cout << endl;
+
+	list<int>::reverse_iterator iter; //역방향 반복자
+
+	list<int> lst = { 1,2,3,4,5 };
+
+	//list의 반복자는 삽입, 삭제 동작에서 반복자가 무효화 되지 않는다.
+	//vector는 무효화됨
+	auto l_it4 = next(lst.begin(), 4);
+	cout << *l_it4 << endl;
+
+	lst.insert(next(lst.begin(), 2), 0);
+	for (auto i : lst)
+		cout << i << " ";
+	cout << endl;
+	cout << *l_it4 << endl;*/
+
+	//실습문제2 : 카드게임 시뮬레이션
+	game Cg;
+	Cg.buildDeck();
+	Cg.dealCards();
+	Cg.playGame();
+	auto winner = Cg.getWinner();
+	cout << winner << "번 플레이어가 이겼습니다!" << endl;
 
 	return 0;
 }
