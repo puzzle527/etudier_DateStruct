@@ -144,7 +144,7 @@ struct game
 
 	void playGame()
 	{
-		while (not isGameComplete())
+		while (!isGameComplete())
 		{
 			playOneRound();
 		}

@@ -6,6 +6,9 @@
 #include <forward_list>
 #include <vector>
 #include <string>
+#include <stack>
+#include <queue>
+#include <deque>
 #include <algorithm>
 #include <sstream>
 #include <random>
@@ -19,9 +22,13 @@ using namespace std;
 
 #include "array.h"
 #include "singly_ll.h"
-#include "cir_list.h"
+#include "cir_list.h" //Lesson 1
 
-#include "CardGame.h"
+#include "CardGame.h" //Lesson 2
+
+#include "Lesson3/Printer.h"
+
+#include "org_tree.h" //트리구조로 회사 구조만들기
 
 struct student
 {

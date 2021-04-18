@@ -169,12 +169,89 @@ int main(void)
 	cout << *l_it4 << endl;*/
 
 	//실습문제2 : 카드게임 시뮬레이션
-	game Cg;
+	/*game Cg;
 	Cg.buildDeck();
 	Cg.dealCards();
 	Cg.playGame();
 	auto winner = Cg.getWinner();
-	cout << winner << "번 플레이어가 이겼습니다!" << endl;
+	cout << winner << "번 플레이어가 이겼습니다!" << endl;*/
+
+	//deque
+	/*deque<int> deq = { 1,2,3,4,5 };
+
+	deq.push_front(0);//맨 앞에 0추가;
+	deq.push_back(6);//맨 뒤에 6추가;
+	deq.insert(deq.begin() + 2, 10);//맨 앞에서 2칸 뒤에 10추가
+	deq.pop_back();
+	deq.pop_front();
+	deq.erase(deq.begin() + 1); //맨 앞에서 1칸 뒤 삭제
+	deq.erase(deq.begin() + 3, deq.end()); //맨 앞에서 3칸 뒤부터 마지막까지 삭제*/
+
+	//stack -> 모든 연산의 시간복잡도 O(1), LIFO Last In First Out
+	//컨테이너 어뎁터 stack, queue, priority_queue -> deque의 기반으로 구현되어 있음.
+	//deque이 아닌 list, vector를 기본 생성자로 만들고자 한다면
+	//stack<int, vector<int>> stk; stack<int, list<int>> skt; 등으로 선언하면 됨.
+	
+	//queue FIFO First In First Out 아래 함수들의 시간복잡도 O(1)
+	/*queue<int> q;
+	q.push(1); //맨 뒤에 1 추가
+	q.push(2); //맨 뒤에 2 추가
+	q.push(3); //맨 뒤에 3 추가 {1, 2, 3};
+	q.pop(); //맨 앞 원소 제거 {2, 3};
+	q.push(4); //맨 뒤에 4를 추가{2, 3, 4};*/
+
+	//priority_queue heap이라고 부르는 구조;
+	//heap은 컨테이너에서 가장 작은(또는 가장 큰) 원소에 빠르게 접근할 수 있는 자료 구조
+	//최소/최대 원소에 접근하는 동작은 O(1)의 시간복잡도를 가짐;
+	//원소 삽입은 O(log n)의 시간복잡도로 동작
+	//원소제거는 최소/최대 원소에 대해서만 가능
+	//stack, queue와 달리 기본적인 어댑터 컨테이너가 vector
+	//기본적으로 최대 힙으로 생성 비교자 std::less
+
+	//stack, queue, priority_queue -> 모든 원소를 순회하는 작업이 필요없으므로 STL 반복자 지원 X
+
+	//Lesson3
+	/*Printer<5> printer;
+
+	Job j1("광희", 10);
+	Job j2("정다", 4);
+	Job j3("현수", 5);
+	Job j4("유미", 7);
+	Job j5("채원", 8);
+	Job j6("시원", 10);
+	
+	printer.addNewJob(j1);
+	printer.addNewJob(j2);
+	printer.addNewJob(j3);
+	printer.addNewJob(j4);
+	printer.addNewJob(j5);
+	printer.addNewJob(j6); //현재대기열이 가득 차있어서 추가할 수 없음
+	printer.startPrinting();
+
+	printer.addNewJob(j6); //현재 대기열이 비었으므로 추가 가능
+	printer.startPrinting();*/
+
+	//비선형 구조
+	//tree(트리):상하 반전된 형태
+	//node : 데이터가 저장된 부분, edge : 노드와 노드 사이를 잇는 선
+	//트리의 중심이 되는 노드 : root node (가장 맨 위)
+	auto tree = org_tree::create_org_structure("CEO");
+
+	tree.addSubordinate("CEO", "부사장");
+	tree.addSubordinate("부사장", "아이티부장");
+	tree.addSubordinate("부사장", "마케팅부장");
+	tree.addSubordinate("아이티부장", "보안팀장");
+	tree.addSubordinate("아이티부장", "앱개발팀장");
+	tree.addSubordinate("마케팅부장", "물류팀장");
+	tree.addSubordinate("마케팅부장", "홍보팀장");
+	tree.addSubordinate("부사장", "재무부장");
+
+	cout << endl;
+
+	tree.preOrder(tree.root);
+	tree.inOrder(tree.root);
+	tree.postOrder(tree.root);
+	tree.levelOrder(tree.root);
 
 	return 0;
 }
