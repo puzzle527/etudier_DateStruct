@@ -235,23 +235,53 @@ int main(void)
 	//tree(트리):상하 반전된 형태
 	//node : 데이터가 저장된 부분, edge : 노드와 노드 사이를 잇는 선
 	//트리의 중심이 되는 노드 : root node (가장 맨 위)
-	auto tree = org_tree::create_org_structure("CEO");
+	//auto tree = org_tree::create_org_structure("CEO");
+	//
+	//tree.addSubordinate("CEO", "부사장");
+	//tree.addSubordinate("부사장", "아이티부장");
+	//tree.addSubordinate("부사장", "마케팅부장");
+	//tree.addSubordinate("아이티부장", "보안팀장");
+	//tree.addSubordinate("아이티부장", "앱개발팀장");
+	//tree.addSubordinate("마케팅부장", "물류팀장");
+	//tree.addSubordinate("마케팅부장", "홍보팀장");
+	//tree.addSubordinate("부사장", "재무부장");
+	//
+	//cout << endl;
+	//
+	//tree.preOrder(tree.root);
+	//tree.inOrder(tree.root);
+	//tree.postOrder(tree.root);
+	//tree.levelOrder(tree.root);
+	
+	//BST
+	//bst tree;
+	//tree.insert(12);
+	//tree.insert(10);
+	//tree.insert(20);
+	//tree.insert(8);
+	//tree.insert(11);
+	//tree.insert(15);
+	//tree.insert(28);
+	//tree.insert(4);
+	//tree.insert(2);
 
-	tree.addSubordinate("CEO", "부사장");
-	tree.addSubordinate("부사장", "아이티부장");
-	tree.addSubordinate("부사장", "마케팅부장");
-	tree.addSubordinate("아이티부장", "보안팀장");
-	tree.addSubordinate("아이티부장", "앱개발팀장");
-	tree.addSubordinate("마케팅부장", "물류팀장");
-	tree.addSubordinate("마케팅부장", "홍보팀장");
-	tree.addSubordinate("부사장", "재무부장");
+	//cout << "중위 순회: ";
+	//tree.inorder(); //BST의 모든 원소를 오름차순으로 출력합니다.
+	//cout << endl;
+	//tree.deleteValue(12);
+	//cout << "12를 삭제한 후 중위 순회: ";
+	//tree.inorder(); //BST의 모든 원소를 오름차순으로 출력합니다.
+	//cout << endl;
 
-	cout << endl;
+	//if (tree.find(12))
+	//	cout << "원소 12는 트리에 있습니다." << endl;
+	//else
+	//{
+	//	cout << "원소 12는 트리에 없습니다." << endl;
+	//}
 
-	tree.preOrder(tree.root);
-	tree.inOrder(tree.root);
-	tree.postOrder(tree.root);
-	tree.levelOrder(tree.root);
+	//파일시스템만들기
+	file_system fs;
 
 	return 0;
 }

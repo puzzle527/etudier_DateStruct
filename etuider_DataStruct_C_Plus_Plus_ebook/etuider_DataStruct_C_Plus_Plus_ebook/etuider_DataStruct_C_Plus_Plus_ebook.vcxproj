@@ -144,6 +144,7 @@
     <ClInclude Include="CardGame.h" />
     <ClInclude Include="cir_list.h" />
     <ClInclude Include="Lesson3\Printer.h" />
+    <ClInclude Include="N_arr_tree.h" />
     <ClInclude Include="org_tree.h" />
     <ClInclude Include="singly_ll.h" />
     <ClInclude Include="stdafx.h" />
