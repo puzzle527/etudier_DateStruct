@@ -23,28 +23,34 @@
     <ClInclude Include="stdafx.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="array.h">
+    <ClInclude Include="Lesson1\array.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="singly_ll.h">
+    <ClInclude Include="Lesson1\singly_ll.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="cir_list.h">
+    <ClInclude Include="Lesson1\cir_list.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="CardGame.h">
+    <ClInclude Include="Lesson1\CardGame.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Lesson3\Printer.h">
+    <ClInclude Include="Lesson1\Printer.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="org_tree.h">
+    <ClInclude Include="Lesson2\org_tree.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="BST_Binary_Search_Tree.h">
+    <ClInclude Include="Lesson2\BST_Binary_Search_Tree.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="N_arr_tree.h">
+    <ClInclude Include="Lesson2\N_arr_tree.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesson2\Heap.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesson2\DataListMergeUsingHeap.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
