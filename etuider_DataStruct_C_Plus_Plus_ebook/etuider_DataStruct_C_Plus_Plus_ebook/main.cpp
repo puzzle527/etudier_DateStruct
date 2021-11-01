@@ -2,7 +2,7 @@
 
 int main(void)
 {
-	srand(time(NULL));
+	//srand(time(NULL));
 	//dynamic_array main
 	/*{
 		int nStudents;
@@ -310,21 +310,93 @@ int main(void)
 	//
 	//g.addEdge(city::SEATTLE, city::LONDON, 8000);
 	//g.removeEdge(city::SEATTLE, city::LONDON);
-
-	graph g(6);
-	g.addEdge(city::LONDON, city::MOSCOW, 2500);
-	g.addEdge(city::LONDON, city::SEOUL, 9000);
-	g.addEdge(city::LONDON, city::DUBAI, 5500);
-	g.addEdge(city::SEOUL, city::MOSCOW, 6600);
-	g.addEdge(city::SEOUL, city::SEATTLE, 8000);
-	g.addEdge(city::SEOUL, city::DUBAI, 7000);
-	g.addEdge(city::SEOUL, city::SYDNEY, 8000);
-	g.addEdge(city::SEATTLE, city::MOSCOW, 8400);
-	g.addEdge(city::SEATTLE, city::SYDNEY, 12000);
-	g.addEdge(city::DUBAI, city::SYDNEY, 1200);
 	
-	g.addEdge(city::SEATTLE, city::LONDON, 8000);
-	g.removeEdge(city::SEATTLE, city::LONDON);
+	//activity 12
+	//graph g(6);
+	//g.addEdge(city::LONDON, city::MOSCOW, 2500);
+	//g.addEdge(city::LONDON, city::SEOUL, 9000);
+	//g.addEdge(city::LONDON, city::DUBAI, 5500);
+	//g.addEdge(city::SEOUL, city::MOSCOW, 6600);
+	//g.addEdge(city::SEOUL, city::SEATTLE, 8000);
+	//g.addEdge(city::SEOUL, city::DUBAI, 7000);
+	//g.addEdge(city::SEOUL, city::SYDNEY, 8000);
+	//g.addEdge(city::SEATTLE, city::MOSCOW, 8400);
+	//g.addEdge(city::SEATTLE, city::SYDNEY, 12000);
+	//g.addEdge(city::DUBAI, city::SYDNEY, 1200);
+	//
+	//g.addEdge(city::SEATTLE, city::LONDON, 8000);
+	//g.removeEdge(city::SEATTLE, city::LONDON);
+
+	//Exercise13
+	//hash_map map(7);
+	//auto print = [&](int value)
+	//{
+	//	if (map.find(value))
+	//		cout << "해시에서 " << value << " 찾음";
+	//	else
+	//		cout << "해시에서 " << value << " 못찾음";
+	//	cout << endl;
+	//};
+	//
+	//map.insert(2);
+	//map.insert(25);
+	//map.insert(10);
+	//print(25);
+	//
+	//map.insert(100);
+	//2가 사라짐 충돌
+	//print(100);
+	//2 찾을 수 없음
+	//print(2);
+	//
+	//map.erase(25);
+	 
+	//Exercise14
+	//hash_map map(7);
+	//
+	//auto print = [&](int value) {
+	//	if (map.find(value))
+	//		std::cout << "해시 맵에서 " << value << "을(를) 찾았습니다.";
+	//	else
+	//		std::cout << "해시 맵에서 " << value << "을(를) 찾지 못했습니다.";
+	//	std::cout << std::endl;
+	//};
+	//
+	//map.insert(2);
+	//map.insert(25);
+	//map.insert(10);
+	//
+	//map.insert(100);
+	//map.insert(55);
+	//
+	//print(100);
+	//print(2);
+	//
+	//map.erase(2);
+
+	//Exercise15
+	//hash_map map(7);
+	//map.print();
+	//std::cout << std::endl;
+	//
+	//map.insert(10);
+	//map.insert(20);
+	//map.insert(30);
+	//std::cout << std::endl;
+	//
+	//map.insert(104);
+	//map.insert(2);
+	//map.insert(70);
+	//map.insert(9);
+	//map.insert(90);
+	//map.insert(2);
+	//map.insert(7);
+	//std::cout << std::endl;
+	//
+	//map.print();
+	//std::cout << std::endl;
+	//
+	//map.insert(14); // 사이클 발생!
 
 
 	return 0;

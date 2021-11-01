@@ -31,6 +31,10 @@ using namespace std;
 #include "Lesson2/Graph.h"
 #include "Lesson2/AdjacencyList.h"
 
+#include "Lesson3/Hash_int.h"
+#include "Lesson3/ChainingHash.h"
+#include "Lesson3/CukooHash.h"
+
 struct student
 {
 	string name;
