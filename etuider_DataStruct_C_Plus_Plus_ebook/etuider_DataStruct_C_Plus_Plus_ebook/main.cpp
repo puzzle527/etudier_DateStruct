@@ -281,7 +281,51 @@ int main(void)
 	//}
 
 	//파일시스템만들기
-	file_system fs;
+	//file_system fs;
+
+	//힙을 이용한 데이터 리스트 병합 activity 05
+	//vector<int> v1 = { 1, 3, 8, 15, 105 };
+	//vector<int> v2 = { 2, 3, 10, 11, 16, 20, 25 };
+	//vector<int> v3 = { -2, 100, 1000 };
+	//vector<int> v4 = { -1, 0, 14, 18 };
+	//
+	//auto result = merge({ v1, v2, v3, v4 });
+	//
+	//for (auto i : result)
+	//cout << i << ' ';
+	//cout << endl;
+
+	//그래프 만들기
+	//graph g(6);
+	//g.addEdge(city::LONDON, city::MOSCOW, 2500);
+	//g.addEdge(city::LONDON, city::SEOUL, 9000);
+	//g.addEdge(city::LONDON, city::DUBAI, 5500);
+	//g.addEdge(city::SEOUL, city::MOSCOW, 6600);
+	//g.addEdge(city::SEOUL, city::SEATTLE, 8000);
+	//g.addEdge(city::SEOUL, city::DUBAI, 7000);
+	//g.addEdge(city::SEOUL, city::SYDNEY, 8000);
+	//g.addEdge(city::SEATTLE, city::MOSCOW, 8400);
+	//g.addEdge(city::SEATTLE, city::SYDNEY, 12000);
+	//g.addEdge(city::DUBAI, city::SYDNEY, 1200);
+	//
+	//g.addEdge(city::SEATTLE, city::LONDON, 8000);
+	//g.removeEdge(city::SEATTLE, city::LONDON);
+
+	graph g(6);
+	g.addEdge(city::LONDON, city::MOSCOW, 2500);
+	g.addEdge(city::LONDON, city::SEOUL, 9000);
+	g.addEdge(city::LONDON, city::DUBAI, 5500);
+	g.addEdge(city::SEOUL, city::MOSCOW, 6600);
+	g.addEdge(city::SEOUL, city::SEATTLE, 8000);
+	g.addEdge(city::SEOUL, city::DUBAI, 7000);
+	g.addEdge(city::SEOUL, city::SYDNEY, 8000);
+	g.addEdge(city::SEATTLE, city::MOSCOW, 8400);
+	g.addEdge(city::SEATTLE, city::SYDNEY, 12000);
+	g.addEdge(city::DUBAI, city::SYDNEY, 1200);
+	
+	g.addEdge(city::SEATTLE, city::LONDON, 8000);
+	g.removeEdge(city::SEATTLE, city::LONDON);
+
 
 	return 0;
 }

@@ -139,16 +139,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Lesson2\DataListMergeUsingHeap.h" />
-    <ClInclude Include="Lesson1\array.h" />
-    <ClInclude Include="Lesson2\BST_Binary_Search_Tree.h" />
-    <ClInclude Include="Lesson1\CardGame.h" />
-    <ClInclude Include="Lesson1\cir_list.h" />
-    <ClInclude Include="Lesson2\Heap.h" />
-    <ClInclude Include="Lesson1\Printer.h" />
-    <ClInclude Include="Lesson2\N_arr_tree.h" />
-    <ClInclude Include="Lesson2\org_tree.h" />
-    <ClInclude Include="Lesson1\singly_ll.h" />
+    <ClInclude Include="Lesson2\AdjacencyList.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

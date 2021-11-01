@@ -20,14 +20,16 @@
 
 using namespace std;
 
-#include "array.h"
-#include "singly_ll.h"
-#include "cir_list.h" //activity 1
-#include "CardGame.h" //activity 2
-#include "Lesson3/Printer.h"
+#include "Lesson1/array.h"
+#include "Lesson1/CardGame.h"
+#include "Lesson1/cir_list.h" //activity 1
+#include "Lesson1/Printer.h" //activity 2
+#include "Lesson1/singly_ll.h"
 //#include "org_tree.h" //트리구조로 회사 구조만들기
-#include "BST_Binary_Search_Tree.h"
-#include "N_arr_tree.h" //파일시스템 만들기 activity 4
+#include "Lesson2/BST_Binary_Search_Tree.h"
+#include "Lesson2/DataListMergeUsingHeap.h" //파일시스템 만들기 activity 4
+#include "Lesson2/Graph.h"
+#include "Lesson2/AdjacencyList.h"
 
 struct student
 {
