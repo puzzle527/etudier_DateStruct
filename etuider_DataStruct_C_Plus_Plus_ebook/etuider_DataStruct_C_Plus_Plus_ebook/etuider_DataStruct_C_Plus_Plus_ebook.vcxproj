@@ -70,12 +70,16 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Users\김성훈\Downloads\boost_1_75_0\boost_1_75_0;C:\Program Files\OpenSSL-Win64\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\김성훈\Downloads\boost_1_75_0\boost_1_75_0\libs;C:\Program Files\OpenSSL-Win64\lib\VC;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(DH);$(IncludePath)</IncludePath>
+    <LibraryPath>$(DL);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>C:\Users\김성훈\Downloads\boost_1_75_0\boost_1_75_0;C:\Program Files\OpenSSL-Win64\include;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Users\김성훈\Downloads\boost_1_75_0\boost_1_75_0\libs;C:\Program Files\OpenSSL-Win64\lib\VC;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(DH);$(IncludePath)</IncludePath>
+    <LibraryPath>$(DL);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

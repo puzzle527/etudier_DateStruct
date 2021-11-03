@@ -13,6 +13,8 @@
 #include <sstream>
 #include <random>
 #include <chrono>
+#include <unordered_map>
+#include <unordered_set>
 
 #include <type_traits>
 
@@ -34,6 +36,9 @@ using namespace std;
 #include "Lesson3/Hash_int.h"
 #include "Lesson3/ChainingHash.h"
 #include "Lesson3/CukooHash.h"
+#include "Lesson3/URLMapping.h"
+#include "Lesson3/Bloom_Filter.h"
+#include "Lesson3/DuplicateCheckEmail.h"
 
 struct student
 {

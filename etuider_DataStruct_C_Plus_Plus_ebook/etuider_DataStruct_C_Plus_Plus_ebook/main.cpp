@@ -398,6 +398,104 @@ int main(void)
 	//
 	//map.insert(14); // 사이클 발생!
 
+	//Activity06
+	/*URLService service;
+
+	if (service.registerURL("https://www.gilbut.co.kr/book/view?bookcode=BN002245", "https://py_dojang"))
+	{
+		std::cout << "https://py_dojang 등록" << std::endl;
+	}
+	else
+	{
+		std::cout << "https://py_dojang 등록 실패" << std::endl;
+	}
+
+	if (service.registerURL("https://www.gilbut.co.kr/book/view?bookcode=BN001484", "https://c_dojang"))
+	{
+		std::cout << "https://c_dojang 등록" << std::endl;
+	}
+	else
+	{
+		std::cout << "https://c_dojang 등록 실패" << std::endl;
+	}
+
+	if (service.registerURL("https://www.gilbut.co.kr/book/view?bookcode=BN002402", "https://opencv4"))
+	{
+		std::cout << "https://opencv4 등록" << std::endl;
+	}
+	else
+	{
+		std::cout << "https://opencv4 등록 실패" << std::endl;
+	}
+
+	auto pythonBook = service.lookup("https://py_dojang");
+	if (pythonBook.first)
+	{
+		std::cout << "https://py_dojang 원본 URL: " << pythonBook.second << std::endl;
+	}
+	else
+	{
+		std::cout << "https://py_dojang 원본 URL을 찾을 수 없습니다." << std::endl;
+	}
+
+	auto cppBook = service.lookup("https://cpp_dojang");
+	if (cppBook.first)
+	{
+		std::cout << "https://cpp_dojang 원본 URL: " << cppBook.second << std::endl;
+	}
+	else
+	{
+		std::cout << "https://cpp_dojang 원본 URL을 찾을 수 없습니다." << std::endl;
+	}
+
+	if (service.deregisterURL("https://c_dojang"))
+	{
+		std::cout << "c_dojang 책 URL 등록 해제" << std::endl;
+	}
+	else
+	{
+		std::cout << "c_dojang 책 URL 등록 해제 실패" << std::endl;
+	}
+
+	auto findQtBook = service.lookup("https://c_dojang");
+	if (findQtBook.first)
+	{
+		std::cout << "https://c_dojang 원본 URL: " << findQtBook.second << std::endl;
+	}
+	else
+	{
+		std::cout << "https://c_dojang 원본 URL을 찾을 수 없습니다." << std::endl;
+	}
+
+	std::cout << "등록된 URL 리스트:" << std::endl;
+	service.printURLs();*/
+
+	//Exercise17
+	//bloom_filter bf(7);
+	//bf.insert(100);
+	//bf.insert(54);
+	//bf.insert(82);
+	//
+	//bf.lookup(5);
+	//bf.lookup(50);
+	//bf.lookup(20);
+	//bf.lookup(54);
+
+	//Activity07
+	BloomFilter bloom(128, 5);
+	
+	bloom.add("abc@gilbut.com");
+	bloom.add("xyz@gilbut.com");
+	
+	bloom.mayContain("abc");
+	bloom.mayContain("xyz@gilbut.com");
+	bloom.mayContain("xyz");
+	
+	bloom.add("abcd@gilbut.com");
+	bloom.add("ab@gilbut.com");
+	
+	bloom.mayContain("abcd");
+	bloom.mayContain("ab@gilbut.com");
 
 	return 0;
 }
