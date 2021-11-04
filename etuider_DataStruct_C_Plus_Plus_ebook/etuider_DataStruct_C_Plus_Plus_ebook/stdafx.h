@@ -40,6 +40,14 @@ using namespace std;
 #include "Lesson3/Bloom_Filter.h"
 #include "Lesson3/DuplicateCheckEmail.h"
 
+#include "Lesson4/BinarySearch.h"
+#include "Lesson4/Vaccine.h"
+#include "Lesson4/MergeSort.h"
+#include "Lesson4/QuickSort.h"
+#include "Lesson4/Partial_QuickSort.h"
+#include "Lesson4/Linear_Time_Select.h"
+
+
 struct student
 {
 	string name;

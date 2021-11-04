@@ -470,6 +470,14 @@ int main(void)
 	std::cout << "등록된 URL 리스트:" << std::endl;
 	service.printURLs();*/
 
+	//Activity 8
+	// 임의의 학생 정보 생성
+	//auto p = generate_random_Student(1000);
+	//
+	//search_test(1000, p);
+	//search_test(10000, p);
+	//search_test(100000, p);
+
 	//Exercise17
 	//bloom_filter bf(7);
 	//bf.insert(100);
@@ -482,20 +490,35 @@ int main(void)
 	//bf.lookup(54);
 
 	//Activity07
-	BloomFilter bloom(128, 5);
-	
-	bloom.add("abc@gilbut.com");
-	bloom.add("xyz@gilbut.com");
-	
-	bloom.mayContain("abc");
-	bloom.mayContain("xyz@gilbut.com");
-	bloom.mayContain("xyz");
-	
-	bloom.add("abcd@gilbut.com");
-	bloom.add("ab@gilbut.com");
-	
-	bloom.mayContain("abcd");
-	bloom.mayContain("ab@gilbut.com");
+	//BloomFilter bloom(128, 5);
+	//
+	//bloom.add("abc@gilbut.com");
+	//bloom.add("xyz@gilbut.com");
+	//
+	//bloom.mayContain("abc");
+	//bloom.mayContain("xyz@gilbut.com");
+	//bloom.mayContain("xyz");
+	//
+	//bloom.add("abcd@gilbut.com");
+	//bloom.add("ab@gilbut.com");
+	//
+	//bloom.mayContain("abcd");
+	//bloom.mayContain("ab@gilbut.com");
+
+	//run_small_search_test();
+	//
+	//run_large_search_test(100000, 36543);
+	//run_large_search_test(1000000, 36543);
+	//run_large_search_test(10000000, 36543);
+
+	//Exercise19
+	//run_merge_sort_test();
+
+	//Exercise20
+	//run_quick_sort_test();
+
+	//Activity09
+	//test_partial_quicksort<unsigned>(100, 10);
 
 	return 0;
 }
