@@ -1,6 +1,7 @@
 #pragma once
 
 #include <iostream>
+#include <sstream>
 #include <array>
 #include <list>
 #include <forward_list>
@@ -9,18 +10,22 @@
 #include <stack>
 #include <queue>
 #include <deque>
-#include <algorithm>
-#include <sstream>
-#include <random>
-#include <chrono>
 #include <unordered_map>
 #include <unordered_set>
+
+#include <algorithm>
+#include <numeric>
+#include <cmath>
+#include <random>
+#include <chrono>
 
 #include <type_traits>
 
 #include <time.h>
 
 using namespace std;
+
+#include "include/mapreduce.hpp"
 
 #include "Lesson1/array.h"
 #include "Lesson1/CardGame.h"
@@ -46,6 +51,8 @@ using namespace std;
 #include "Lesson4/QuickSort.h"
 #include "Lesson4/Partial_QuickSort.h"
 #include "Lesson4/Linear_Time_Select.h"
+#include "Lesson4/Transform_Accumulate.h"
+#include "Lesson4/Mapreduce_Primecheck.h"
 
 
 struct student

@@ -520,5 +520,18 @@ int main(void)
 	//Activity09
 	//test_partial_quicksort<unsigned>(100, 10);
 
+	//Exercise21
+	//run_linear_select_test();
+
+	//binary_search()
+	//vector<int> arr = { 1,2,3,4,5,6,7,8,9 };
+	//reduce()
+
+	//Exercise22
+	//vector<int> S{ 1,10,4,7,3,5,6,9,8,2 };
+	//
+	//transform_test(S);
+	//reduce_test(S);
+
 	return 0;
 }

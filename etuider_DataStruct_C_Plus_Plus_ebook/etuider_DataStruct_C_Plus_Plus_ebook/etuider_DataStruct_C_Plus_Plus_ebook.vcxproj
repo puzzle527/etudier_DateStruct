@@ -102,11 +102,13 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Create</PrecompiledHeader>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <AdditionalIncludeDirectories>%BOOST_ROOT%</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <AdditionalDependencies>libcrypto64MDd.lib;libcrypto64MTd.lib;libssl64MDd.lib;libssl64MTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%BOOST_ROOT%\stage\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -133,19 +135,34 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <AdditionalIncludeDirectories>%BOOST_ROOT%</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>%BOOST_ROOT%\stage\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Lesson4\Linear_Time_Select.h" />
-    <ClInclude Include="Lesson4\QuickSort.h" />
+    <ClInclude Include="include\detail\datasource.hpp" />
+    <ClInclude Include="include\detail\hash_partitioner.hpp" />
+    <ClInclude Include="include\detail\intermediates.hpp" />
+    <ClInclude Include="include\detail\intermediates\in_memory.hpp" />
+    <ClInclude Include="include\detail\intermediates\local_disk.hpp" />
+    <ClInclude Include="include\detail\job.hpp" />
+    <ClInclude Include="include\detail\mergesort.hpp" />
+    <ClInclude Include="include\detail\null_combiner.hpp" />
+    <ClInclude Include="include\detail\platform.hpp" />
+    <ClInclude Include="include\detail\schedule_policy.hpp" />
+    <ClInclude Include="include\detail\schedule_policy\cpu_parallel.hpp" />
+    <ClInclude Include="include\detail\schedule_policy\sequential.hpp" />
+    <ClInclude Include="include\mapreduce.hpp" />
+    <ClInclude Include="Lesson4\Mapreduce_Primecheck.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

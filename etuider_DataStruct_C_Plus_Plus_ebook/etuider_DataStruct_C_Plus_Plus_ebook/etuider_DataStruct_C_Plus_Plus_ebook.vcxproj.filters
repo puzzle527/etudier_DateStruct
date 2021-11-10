@@ -23,10 +23,46 @@
     <ClInclude Include="stdafx.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Lesson4\Linear_Time_Select.h">
+    <ClInclude Include="Lesson4\Mapreduce_Primecheck.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Lesson4\QuickSort.h">
+    <ClInclude Include="include\mapreduce.hpp">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="include\detail\schedule_policy.hpp">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="include\detail\platform.hpp">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="include\detail\null_combiner.hpp">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="include\detail\mergesort.hpp">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="include\detail\job.hpp">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="include\detail\intermediates.hpp">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="include\detail\hash_partitioner.hpp">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="include\detail\datasource.hpp">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="include\detail\schedule_policy\sequential.hpp">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="include\detail\schedule_policy\cpu_parallel.hpp">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="include\detail\intermediates\in_memory.hpp">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="include\detail\intermediates\local_disk.hpp">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
