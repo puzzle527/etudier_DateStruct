@@ -532,6 +532,96 @@ int main(void)
 	//
 	//transform_test(S);
 	//reduce_test(S);
+	 
+	//Exercise25
+	//std::vector<int> service_times{ 8, 1, 2, 4, 9, 2, 3, 5 };
+	//
+	//std::cout << "[처음 일 처리 시간 & 대기 시간]" << std::endl;
+	//compute_and_print_waiting_times<int>(service_times);
+	//
+	//// 일 처리 시간을 오름차순으로 정렬
+	//std::sort(service_times.begin(), service_times.end());
+	//
+	//std::cout << std::endl;
+	//std::cout << "[정렬 후 일 처리 시간 & 대기 시간]" << std::endl;
+	//compute_and_print_waiting_times<int>(service_times);
+	// 
+	//Exercise26
+	//std::vector<Object> objects;
+	//objects.reserve(7);
+	//
+	//std::vector<int> weights{ 1, 2, 5, 9, 2, 3, 4 };
+	//std::vector<double> values{ 10, 7, 15, 10, 12, 11, 5 };
+	//for (auto i = 0; i < 7; i++)
+	//{
+	//	objects.push_back(Object(i + 1, weights[i], values[i]));
+	//}
+	//
+	//// 사용할 수 있는 물건 정보 출력
+	//std::cout << "[사용할 수 있는 물건 정보]" << std::endl;
+	//for (auto& o : objects)
+	//std::cout << o << std::endl;
+	//std::cout << std::endl;
+	//
+	//// 분할가능 배낭 문제 알고리즘 실행, 배낭의 최대 허용 무게는 7로 지정.
+	//int knapsack_capacity = 7;
+	//auto solution = fill_knapsack(objects, knapsack_capacity);
+	//
+	//// 배낭에 넣을 물건 정보 출력
+	//std::cout << "[배낭에 넣을 물건들 (최대 용량 = " << knapsack_capacity << ")]" << std::endl;
+	//for (auto& o : solution)
+	//std::cout << o << std::endl;
+	//std::cout << std::endl;
+
+	//activity 11
+	//list<Work> list;
+	//list.push_back(Work(1, 5, 9));
+	//list.push_back(Work(2, 6, 20));
+	//list.push_back(Work(3, 16, 19));
+	//list.push_back(Work(4, 7, 10));
+	//list.push_back(Work(5, 9, 19));
+	//list.push_back(Work(6, 10, 19));
+	//list.push_back(Work(7, 6, 12));
+	//list.push_back(Work(8, 2, 17));
+	//list.push_back(Work(9, 10, 13));
+	//list.push_back(Work(10, 4, 7));
+	//for (auto& i : list)
+	//	cout << i << endl;
+	////cout << *list.begin() << endl;
+	////list.remove(Work(1, 5, 9));
+	////cout << *list.begin() << endl;
+	//
+	//vector<Work> vlist;
+	//scheduling(vlist, list);
+	//for (auto& i : vlist)
+	//	cout << i << endl;
+
+	//Exercise26
+	using T = unsigned;
+
+	// 그래프 객체 생성
+	//Graph<T> G(9);
+	//
+	//map<unsigned, vector<pair<unsigned, T>>> edge_map;
+	//edge_map[1] = { {2, 2}, {5, 3} };
+	//edge_map[2] = { {1, 2}, {5, 5}, {4, 1} };
+	//edge_map[3] = { {4, 2}, {7, 3} };
+	//edge_map[4] = { {2, 1}, {3, 2}, {5, 2}, {6, 4}, {8, 5} };
+	//edge_map[5] = { {1, 3}, {2, 5}, {4, 2}, {8, 3} };
+	//edge_map[6] = { {4, 4}, {7, 4}, {8, 1} };
+	//edge_map[7] = { {3, 3}, {6, 4} };
+	//edge_map[8] = { {4, 5}, {5, 3}, {6, 1} };
+	//
+	//for (auto& i : edge_map)
+	//for (auto& j : i.second)
+	//G.add_edge(Edge<T>{ i.first, j.first, j.second });
+	//
+	//cout << "[입력 그래프]" << endl;
+	//cout << G << endl;
+	//
+	//Graph<T> MST = minimum_spanning_tree(G);
+	//cout << "[최소 신장 트리]" << endl;
+	//cout << MST;
 
 	return 0;
 }

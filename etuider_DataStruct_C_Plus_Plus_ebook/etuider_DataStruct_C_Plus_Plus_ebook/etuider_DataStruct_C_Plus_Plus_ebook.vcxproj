@@ -162,7 +162,6 @@
     <ClInclude Include="include\detail\schedule_policy\cpu_parallel.hpp" />
     <ClInclude Include="include\detail\schedule_policy\sequential.hpp" />
     <ClInclude Include="include\mapreduce.hpp" />
-    <ClInclude Include="Lesson4\Mapreduce_Primecheck.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

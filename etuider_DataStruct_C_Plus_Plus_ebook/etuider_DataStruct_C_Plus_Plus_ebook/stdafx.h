@@ -12,6 +12,7 @@
 #include <deque>
 #include <unordered_map>
 #include <unordered_set>
+#include <map>
 
 #include <algorithm>
 #include <numeric>
@@ -24,8 +25,6 @@
 #include <time.h>
 
 using namespace std;
-
-#include "include/mapreduce.hpp"
 
 #include "Lesson1/array.h"
 #include "Lesson1/CardGame.h"
@@ -53,6 +52,11 @@ using namespace std;
 #include "Lesson4/Linear_Time_Select.h"
 #include "Lesson4/Transform_Accumulate.h"
 #include "Lesson4/Mapreduce_Primecheck.h"
+
+#include "Lesson5/Shortest_Job_First.h"
+#include "Lesson5/Fractional_Knapsack.h"
+#include "Lesson5/Interval_Scheduling_Solution.cpp.h"
+#include "Lesson5/Kruskal_Mst.cpp.h"
 
 
 struct student

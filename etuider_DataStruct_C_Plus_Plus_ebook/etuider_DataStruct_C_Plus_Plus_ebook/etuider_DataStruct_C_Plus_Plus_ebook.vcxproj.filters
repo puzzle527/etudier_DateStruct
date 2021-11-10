@@ -23,9 +23,6 @@
     <ClInclude Include="stdafx.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Lesson4\Mapreduce_Primecheck.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="include\mapreduce.hpp">
       <Filter>헤더 파일</Filter>
     </ClInclude>
