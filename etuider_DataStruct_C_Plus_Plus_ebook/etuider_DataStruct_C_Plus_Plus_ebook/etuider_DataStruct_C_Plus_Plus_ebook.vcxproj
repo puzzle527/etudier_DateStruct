@@ -149,6 +149,9 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Lesson6\Bipartite_Check.h" />
+    <ClInclude Include="Lesson6\Graph_DFS.h" />
+    <ClInclude Include="Lesson6\Graph_BFS.h" />
     <ClInclude Include="include\detail\datasource.hpp" />
     <ClInclude Include="include\detail\hash_partitioner.hpp" />
     <ClInclude Include="include\detail\intermediates.hpp" />

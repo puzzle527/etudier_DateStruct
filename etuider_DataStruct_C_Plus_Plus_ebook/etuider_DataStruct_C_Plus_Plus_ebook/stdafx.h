@@ -13,12 +13,14 @@
 #include <unordered_map>
 #include <unordered_set>
 #include <map>
+#include <set>
 
 #include <algorithm>
 #include <numeric>
 #include <cmath>
 #include <random>
 #include <chrono>
+#include <utility>
 
 #include <type_traits>
 
@@ -57,6 +59,12 @@ using namespace std;
 #include "Lesson5/Fractional_Knapsack.h"
 #include "Lesson5/Interval_Scheduling_Solution.cpp.h"
 #include "Lesson5/Kruskal_Mst.cpp.h"
+#include "Lesson5/Graph_Coloring.h"
+#include "Lesson5/welsh_powell_solution.h"
+
+#include "Lesson6/Graph_BFS.h"
+#include "Lesson6/Graph_DFS.h"
+#include "Lesson6/Bipartite_Check.h"
 
 
 struct student

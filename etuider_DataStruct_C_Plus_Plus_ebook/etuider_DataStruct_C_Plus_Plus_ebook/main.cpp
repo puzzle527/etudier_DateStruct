@@ -623,5 +623,97 @@ int main(void)
 	//cout << "[최소 신장 트리]" << endl;
 	//cout << MST;
 
+	//using T = unsigned;
+	//
+	//// 그래프 객체 생성
+	//Graph<T> G(9);
+	//
+	//map<unsigned, vector<pair<unsigned, T>>> edge_map;
+	//edge_map[1] = { {2, 0}, {5, 0} };
+	//edge_map[2] = { {1, 0}, {5, 0}, {4, 0} };
+	//edge_map[3] = { {4, 0}, {7, 0} };
+	//edge_map[4] = { {2, 0}, {3, 0}, {5, 0}, {6, 0}, {8, 0} };
+	//edge_map[5] = { {1, 0}, {2, 0}, {4, 0}, {8, 0} };
+	//edge_map[6] = { {4, 0}, {7, 0}, {8, 0} };
+	//edge_map[7] = { {3, 0}, {6, 0} };
+	//edge_map[8] = { {4, 0}, {5, 0}, {6, 0} };
+	//
+	//for (auto& i : edge_map)
+	//	for (auto& j : i.second)
+	//		G.add_edge(Edge<T>{ i.first, j.first, j.second });
+	//
+	//cout << "[입력 그래프]" << endl;
+	//cout << G << endl;
+	//
+	//auto colors = greedy_coloring<T>(G);
+	//cout << "[그래프 컬러링]" << endl;
+	//print_colors(colors);
+
+	//Activity12
+	//using T = unsigned;
+	//
+	//// 그래프 객체 생성
+	//Graph<T> G(9);
+	//
+	//map<unsigned, vector<pair<unsigned, T>>> edge_map;
+	//edge_map[1] = { {2, 0}, {5, 0} };
+	//edge_map[2] = { {1, 0}, {5, 0}, {4, 0} };
+	//edge_map[3] = { {4, 0}, {7, 0} };
+	//edge_map[4] = { {2, 0}, {3, 0}, {5, 0}, {6, 0}, {8, 0} };
+	//edge_map[5] = { {1, 0}, {2, 0}, {4, 0}, {8, 0} };
+	//edge_map[6] = { {4, 0}, {7, 0}, {8, 0} };
+	//edge_map[7] = { {3, 0}, {6, 0} };
+	//edge_map[8] = { {4, 0}, {5, 0}, {6, 0} };
+	//
+	//for (auto& i : edge_map)
+	//	for (auto& j : i.second)
+	//		G.add_edge(Edge<T>{ i.first, j.first, j.second });
+	//
+	//cout << "[입력 그래프]" << endl;
+	//cout << G << endl;
+	//
+	//auto colors = welsh_powell_coloring<T>(G);
+	//cout << endl << "[그래프 컬러링]" << endl;
+	//print_colors(colors);
+
+	//Exercise28
+	//using T = unsigned;
+	//auto G = create_reference_graph<T>();
+	//cout << "[입력 그래프]" << endl;
+	//cout << G << endl;
+	//
+	////1번 정점부터 BFS 실행 & 방문 순서 출력
+	//cout << "[BFS 방문 순서]" << endl;
+	//auto bfs_visit_order = breadth_first_search(G, 1);
+	//for (auto v : bfs_visit_order)
+	//	cout << v << endl;
+
+	//Exercise29
+	//using T = unsigned;
+	//
+	//// 그래프 객체 생성
+	//auto G = create_reference_graph<T>();
+	//cout << "[입력 그래프]" << endl;
+	//cout << G << endl;
+	//
+	//// 1번 정점부터 DFS 실행 & 방문 순서 출력
+	//cout << "[DFS 방문 순서]" << endl;
+	//auto dfs_visit_order = depth_first_search(G, 1);
+	//for (auto v : dfs_visit_order)
+	//	cout << v << endl;
+	
+	//Activity13
+	//using T = unsigned;
+	//
+	//// 그래프 객체 생성
+	//auto BG = create_bipartite_reference_graph<T>();
+	//cout << "[입력 그래프]" << endl;
+	//cout << BG << endl;
+	//
+	//if (bipartite_check<T>(BG))
+	//cout << endl << "이분 그래프가 맞습니다." << endl;
+	//else
+	//cout << endl << "이분 그래프가 아닙니다." << endl;
+
 	return 0;
 }
