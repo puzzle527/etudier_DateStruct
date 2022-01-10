@@ -597,7 +597,7 @@ int main(void)
 	//	cout << i << endl;
 
 	//Exercise26
-	using T = unsigned;
+	//using T = unsigned;
 
 	// 그래프 객체 생성
 	//Graph<T> G(9);
@@ -715,5 +715,50 @@ int main(void)
 	//else
 	//cout << endl << "이분 그래프가 아닙니다." << endl;
 
+	//Exercise30
+	//using T = unsigned;
+
+	//// 그래프 객체 생성
+	//auto G = create_reference_graph<T>();
+	//cout << "[입력 그래프]" << endl;
+	//cout << G << endl;
+
+	//auto MST = prim_MST<T>(G, 1);
+
+	//cout << "[최소 신장 트리]" << endl;
+	//for (auto v : MST)
+	//cout << v << endl;
+	//cout << endl;
+
+	//Exercise31
+	//using T = unsigned;
+	//
+	//// 그래프 객체 생성
+	//auto G = create_reference_graph<T>();
+	//cout << "[입력 그래프]" << endl;
+	//cout << G << endl;
+	//
+	//auto shortest_path = dijkstra_shortest_path<T>(G, 1, 6);
+	//
+	//cout << endl << "[1번과 6번 정점 사이의 최단 경로]" << endl;
+	//for (auto v : shortest_path)
+	//cout << v << " ";
+	//cout << endl;
+	 
+	////Activity14
+	//using T = unsigned;
+	//
+	//// 파일로부터 그래프 객체 생성
+	//auto G = read_graph_from_file<T>();
+	//
+	//unsigned src_id = 913;
+	//unsigned dst_id = 542;
+	//auto shortest_path = dijkstra_shortest_path<T>(G, src_id, dst_id);
+	//
+	//cout << endl << "[" << src_id << " 정점에서 " << dst_id << " 정점까지의 최단 경로]" << endl;
+	//for (auto v : shortest_path)
+	//cout << v << " ";
+	//cout << endl;
+	
 	return 0;
 }

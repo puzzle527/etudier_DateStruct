@@ -1,6 +1,7 @@
 #pragma once
 
 #include <iostream>
+#include <fstream>
 #include <sstream>
 #include <array>
 #include <list>
@@ -21,6 +22,7 @@
 #include <random>
 #include <chrono>
 #include <utility>
+#include <limits>
 
 #include <type_traits>
 
@@ -65,7 +67,9 @@ using namespace std;
 #include "Lesson6/Graph_BFS.h"
 #include "Lesson6/Graph_DFS.h"
 #include "Lesson6/Bipartite_Check.h"
-
+#include "Lesson6/Prim.h"
+#include "Lesson6/Dijkstra.h"
+#include "Lesson6/NY_shortest_path.h"
 
 struct student
 {
